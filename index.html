@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./plugins/animate/animate.css">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<div class="container py-5">
+    <div class="col-md-6 col-12 offset-lg-3 shadow bg-light">
+        <div class="carry">
+
+            <h5 class="track text-center py-3">Expense Tracker</h5>
+        <div class="tracker py-3">
+            <div class="head text-center text-white">
+                <p class="total-text">Total Balance</p>
+                <h3 class="total-amount">
+                    <span>₦</span><span id="total">0.00</span>
+                </h3>
+
+                <div class="row mt-5">
+                    <div class="col-md-6 col-6 text-left px-3">
+                        <div class="px-4">
+                            <p class="total-text">Income</p>
+                            <h4 class="total-amount" >
+                                <span>₦</span><span id="income">0.00</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 text-right">
+                       <div class="px-4">
+                        <p class="total-text">Expense</p>
+                        <h4 class="total-amount" >
+                            <span>₦</span><span id="expense">0.00</span>
+                        </h4>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents py-3">
+                <p class="history text-center">History</p>
+                <p class="income pl-3">Income</p>
+                    <div class="row px-2 box" id="box">
+                        <!-- <p class="list bg-white py-2 px-3">Lorem, ipsum dolor.</p> -->
+                    </div>
+                    
+                    <p class="expenses pl-3">Expenses</p>
+                <div class="box2" id="box2">
+                    <!-- <p class="list bg-white py-2 px-3">Lorem, ipsum dolor.</p> -->
+                </div>
+
+        </div>
+    
+    <a href="./index.html" class="btn btn-clear text-center" id="clear">CLEAR ALL</a>    
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg btn-plus my-4" data-toggle="modal" data-target="#modelId">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn px-3 btn-minus" data-dismiss="modal"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </div>
+
+                <div class="modal-body text-center">
+                  <h5 class="Income">Income Here</h5>
+                  <input class="form-control my-2" type="number" name="" id="incomeAmount" placeholder="Amount" autofocus>
+                  <input class="form-control" type="text" name="" id="incomeNote" placeholder="write something">
+                    <button class="btn btn-add" id="btnadd">ADD</button>
+
+
+                </div>
+
+                <div class="modal-body text-center">
+                  <h5 class="Income">Expense Here</h5>
+                  <input class="form-control my-2" type="number" name="" id="expenseAmount" placeholder="Amount">
+                  <input class="form-control" type="text" name="" id="expenseNote" placeholder="write something">
+                  <button class="btn btn-add " id="btnadd2">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="./plugins/bootstrap/js/jquery.min.js"></script>
+<script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
