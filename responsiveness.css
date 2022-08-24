@@ -1,0 +1,27 @@
+@media (max-width: 480px) {
+  .tracker{
+    height: 25vh;
+  }
+    
+  .btn-clear{
+    padding: 10px 135px;
+
+}
+
+}
+
+
+@media (max-width: 375px) {
+  .tracker{
+    height: 35vh;
+  }
+    
+  .btn-clear{
+    padding: 8px 115px;
+
+}
+
+
+
+
+}
